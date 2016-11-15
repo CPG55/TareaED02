@@ -6,7 +6,7 @@ public class Saluda {
 		// TODO Auto-generated method stub
 		
 		//Variable de clase.
-		String nombre = null;
+		private String nombre = null;
 
 		Scanner entrada = new Scanner(System.in);
 		
@@ -15,4 +15,17 @@ public class Saluda {
 		System.out.println("Hola " + nombre + " !!!");		
 		
 	}
+	
+	public String getNombre (){
+		
+		return nombre;
+		
+	}
+	
+	public void setNombre (String nombre) {
+		
+		this.nombre = nombre ;
+		
+	}
+	
 }
