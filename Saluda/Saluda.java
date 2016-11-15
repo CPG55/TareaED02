@@ -8,10 +8,7 @@ public class Saluda {
 		//Variable de clase.
 		private String nombre = null;
 
-		Scanner entrada = new Scanner(System.in);
 		
-		System.out.println("Cual es tu nombre?");		
-		nombre = entrada.nextLine();		
 		System.out.println("Hola " + nombre + " !!!");		
 		
 	}
@@ -26,6 +23,15 @@ public class Saluda {
 		
 		this.nombre = nombre ;
 		
+	}
+	
+	public String pideNombre () {
+		
+		Scanner entrada = new Scanner(System.in);		
+		System.out.println("Cual es tu nombre?");		
+		nombre = entrada.nextLine();
+		
+		return nombre;
 	}
 	
 }
