@@ -8,30 +8,33 @@ public class Saluda {
 		//Variable de clase.
 		private String nombre = null;
 
+		//Ejecutar método
+		pidenombre ();
 		
-		System.out.println("Hola " + nombre + " !!!");		
+		//Saludar
+		System.out.println("Hola " + getNombre() + " !!!");		
 		
 	}
 	
-	public String getNombre (){
+	public static String getNombre (){
 		
 		return nombre;
 		
 	}
 	
-	public void setNombre (String nombre) {
+	public static void setNombre (String nombre) {
 		
 		this.nombre = nombre ;
 		
 	}
 	
-	public String pideNombre () {
+	public static pideNombre () {
 		
 		Scanner entrada = new Scanner(System.in);		
 		System.out.println("Cual es tu nombre?");		
-		nombre = entrada.nextLine();
 		
-		return nombre;
+		setNombre(entrada.nextLine());		
+		
 	}
 	
 }
